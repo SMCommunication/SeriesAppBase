@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BCBF0FCD64B587C54CB639960D042ECC7DEB4D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BCBF0FCD64B587C54CB639960D042ECC7DEB4D8" : 0,
+    "22630ED16D18BDF307168192222A8E74C563B87F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A2948FE3-E94A-416B-96E9-9CDDAE52FD4C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BCBF0FCD64B587C54CB639960D042ECC7DEB4D8" : "SeriesAppBase\/",
+    "22630ED16D18BDF307168192222A8E74C563B87F" : "SeriesAppBase\/SHUtil\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SeriesAppBase",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SeriesAppBase.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/okamuroshogo\/SHUtil.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22630ED16D18BDF307168192222A8E74C563B87F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SMCommunication\/SeriesAppBase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BCBF0FCD64B587C54CB639960D042ECC7DEB4D8"
+    }
+  ]
+}
