@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New Post View Controller-->
         <scene sceneID="s80-ez-mTD">
             <objects>
-                <viewController id="NnS-KV-XAM" sceneMemberID="viewController">
+                <viewController id="NnS-KV-XAM" customClass="NewPostViewController" customModule="SeriesAppBase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SOj-9K-qTZ"/>
                         <viewControllerLayoutGuide type="bottom" id="sWB-iX-M1R"/>
@@ -16,7 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="Uzn-kj-qL8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QcU-5E-bws">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="yM4-Ly-G8Y">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yM4-Ly-G8Y" id="Psq-7y-QVG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NnS-KV-XAM" id="7lB-7P-B9m"/>
+                                    <outlet property="delegate" destination="NnS-KV-XAM" id="DCK-yR-xFv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QcU-5E-bws" secondAttribute="trailing" id="dp4-fW-4zT"/>
+                            <constraint firstItem="QcU-5E-bws" firstAttribute="top" secondItem="SOj-9K-qTZ" secondAttribute="bottom" constant="-64" id="mvD-sO-fTi"/>
+                            <constraint firstItem="sWB-iX-M1R" firstAttribute="top" secondItem="QcU-5E-bws" secondAttribute="bottom" constant="-49" id="s4t-Ad-6Zn"/>
+                            <constraint firstItem="QcU-5E-bws" firstAttribute="leading" secondItem="Uzn-kj-qL8" secondAttribute="leading" id="vSu-Ku-N0N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IjD-22-Oob"/>
                 </viewController>

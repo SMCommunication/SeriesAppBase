@@ -8,3 +8,9 @@
 
 import UIKit
 
+
+class MyPageViewController: UIViewController {
+    
+}
+
+
