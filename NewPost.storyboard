@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gei-rG-mHB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s80-ez-mTD">
+            <objects>
+                <viewController id="NnS-KV-XAM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOj-9K-qTZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sWB-iX-M1R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uzn-kj-qL8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IjD-22-Oob"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKI-qO-zdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="432"/>
+        </scene>
+        <!--新着-->
+        <scene sceneID="YaK-wP-xTT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gei-rG-mHB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新着" id="V2I-h7-GE4"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Btl-8x-ry1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NnS-KV-XAM" kind="relationship" relationship="rootViewController" id="IiU-bf-yAt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXS-Of-gXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="432"/>
+        </scene>
+    </scenes>
+</document>
