@@ -32,6 +32,18 @@
 		2AAFEC351CE623B9006CE23E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFEC331CE623B9006CE23E /* Search.storyboard */; };
 		2AAFEC3B1CE6258B006CE23E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC3A1CE6258B006CE23E /* TabBarController.swift */; };
 		2AAFEC3C1CE6258B006CE23E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC3A1CE6258B006CE23E /* TabBarController.swift */; };
+		2AAFEC431CE627EA006CE23E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC421CE627EA006CE23E /* APIService.swift */; };
+		2AAFEC441CE627EA006CE23E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC421CE627EA006CE23E /* APIService.swift */; };
+		2AAFEC461CE6283D006CE23E /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC451CE6283D006CE23E /* MyPageViewController.swift */; };
+		2AAFEC471CE6283D006CE23E /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC451CE6283D006CE23E /* MyPageViewController.swift */; };
+		2AAFEC491CE62851006CE23E /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC481CE62851006CE23E /* NewPostViewController.swift */; };
+		2AAFEC4A1CE62851006CE23E /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC481CE62851006CE23E /* NewPostViewController.swift */; };
+		2AAFEC4C1CE6285F006CE23E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC4B1CE6285F006CE23E /* RecommendViewController.swift */; };
+		2AAFEC4D1CE6285F006CE23E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC4B1CE6285F006CE23E /* RecommendViewController.swift */; };
+		2AAFEC4F1CE62872006CE23E /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC4E1CE62872006CE23E /* RankingViewController.swift */; };
+		2AAFEC501CE62872006CE23E /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC4E1CE62872006CE23E /* RankingViewController.swift */; };
+		2AAFEC521CE62885006CE23E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC511CE62885006CE23E /* SearchViewController.swift */; };
+		2AAFEC531CE62885006CE23E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEC511CE62885006CE23E /* SearchViewController.swift */; };
 		B80BE885916882CC94806E84 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BCDA97AD5DE252BBD33030 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +88,12 @@
 		2AAFEC301CE623B0006CE23E /* Ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
 		2AAFEC331CE623B9006CE23E /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2AAFEC3A1CE6258B006CE23E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2AAFEC421CE627EA006CE23E /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2AAFEC451CE6283D006CE23E /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2AAFEC481CE62851006CE23E /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		2AAFEC4B1CE6285F006CE23E /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		2AAFEC4E1CE62872006CE23E /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		2AAFEC511CE62885006CE23E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		647C1873DFB5F2FAA922AF6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF883D8A6C370E7519D99709 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +228,7 @@
 		2AAFEBEE1CE61787006CE23E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC421CE627EA006CE23E /* APIService.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -279,6 +298,7 @@
 		2AAFEC1C1CE62288006CE23E /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC451CE6283D006CE23E /* MyPageViewController.swift */,
 			);
 			name = MyPage;
 			sourceTree = "<group>";
@@ -286,6 +306,7 @@
 		2AAFEC1D1CE62289006CE23E /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC4E1CE62872006CE23E /* RankingViewController.swift */,
 			);
 			name = Ranking;
 			sourceTree = "<group>";
@@ -293,6 +314,7 @@
 		2AAFEC1E1CE6228B006CE23E /* NewPost */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC481CE62851006CE23E /* NewPostViewController.swift */,
 			);
 			name = NewPost;
 			sourceTree = "<group>";
@@ -300,6 +322,7 @@
 		2AAFEC1F1CE6228C006CE23E /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC4B1CE6285F006CE23E /* RecommendViewController.swift */,
 			);
 			name = Recommend;
 			sourceTree = "<group>";
@@ -307,6 +330,7 @@
 		2AAFEC201CE6228E006CE23E /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC511CE62885006CE23E /* SearchViewController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -673,7 +697,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAFEBBE1CE61673006CE23E /* AppDelegate.swift in Sources */,
+				2AAFEC431CE627EA006CE23E /* APIService.swift in Sources */,
+				2AAFEC521CE62885006CE23E /* SearchViewController.swift in Sources */,
 				2AAFEC3B1CE6258B006CE23E /* TabBarController.swift in Sources */,
+				2AAFEC4F1CE62872006CE23E /* RankingViewController.swift in Sources */,
+				2AAFEC461CE6283D006CE23E /* MyPageViewController.swift in Sources */,
+				2AAFEC491CE62851006CE23E /* NewPostViewController.swift in Sources */,
+				2AAFEC4C1CE6285F006CE23E /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +728,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAFEC081CE62017006CE23E /* AppDelegate.swift in Sources */,
+				2AAFEC441CE627EA006CE23E /* APIService.swift in Sources */,
+				2AAFEC531CE62885006CE23E /* SearchViewController.swift in Sources */,
 				2AAFEC3C1CE6258B006CE23E /* TabBarController.swift in Sources */,
+				2AAFEC501CE62872006CE23E /* RankingViewController.swift in Sources */,
+				2AAFEC471CE6283D006CE23E /* MyPageViewController.swift in Sources */,
+				2AAFEC4A1CE62851006CE23E /* NewPostViewController.swift in Sources */,
+				2AAFEC4D1CE6285F006CE23E /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
