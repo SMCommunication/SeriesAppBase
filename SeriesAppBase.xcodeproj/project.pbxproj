@@ -238,6 +238,11 @@
 		2AAFEBF11CE6179B006CE23E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AAFEC411CE62749006CE23E /* MyPage */,
+				2AAFEC401CE62748006CE23E /* NewPost */,
+				2AAFEC3F1CE62747006CE23E /* Recommend */,
+				2AAFEC3E1CE62745006CE23E /* Ranking */,
+				2AAFEC3D1CE62743006CE23E /* Search */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -352,6 +357,41 @@
 				2AAFEC3A1CE6258B006CE23E /* TabBarController.swift */,
 			);
 			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		2AAFEC3D1CE62743006CE23E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		2AAFEC3E1CE62745006CE23E /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Ranking;
+			sourceTree = "<group>";
+		};
+		2AAFEC3F1CE62747006CE23E /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		2AAFEC401CE62748006CE23E /* NewPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NewPost;
+			sourceTree = "<group>";
+		};
+		2AAFEC411CE62749006CE23E /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyPage;
 			sourceTree = "<group>";
 		};
 		ACBCF3EEB37DD6A5A2561C25 /* Frameworks */ = {
