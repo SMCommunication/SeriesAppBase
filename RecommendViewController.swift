@@ -7,7 +7,19 @@
 //
 
 import UIKit
+import SHUtil
 
-class RecommendViewController: UIViewController {
-    
+class RecommendViewController: UIViewController{
+    @IBOutlet weak var slider: SHSliderView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+       
+        self.slider.front.image = UIImage(named: "5star")
+
+        
+        
+    }
+   
 }
