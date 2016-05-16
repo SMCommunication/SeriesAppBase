@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1944D01CEA5455004E84A2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944CF1CEA5455004E84A2 /* Note.swift */; };
+		2A1944D11CEA5455004E84A2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944CF1CEA5455004E84A2 /* Note.swift */; };
+		2A1944D31CEA557F004E84A2 /* NewPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944D21CEA557F004E84A2 /* NewPostTableViewCell.swift */; };
+		2A1944D41CEA557F004E84A2 /* NewPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944D21CEA557F004E84A2 /* NewPostTableViewCell.swift */; };
+		2A1944D61CEA57CE004E84A2 /* NewPostTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944D51CEA57CE004E84A2 /* NewPostTableViewModel.swift */; };
+		2A1944D71CEA57CE004E84A2 /* NewPostTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1944D51CEA57CE004E84A2 /* NewPostTableViewModel.swift */; };
+		2AAD9FC41CE9DC9A0049F32B /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AAD9FC31CE9DC9A0049F32B /* API.plist */; };
+		2AAD9FC51CE9DC9A0049F32B /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AAD9FC31CE9DC9A0049F32B /* API.plist */; };
+		2AAD9FC71CE9DCDA0049F32B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAD9FC61CE9DCDA0049F32B /* Config.swift */; };
+		2AAD9FC81CE9DCDA0049F32B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAD9FC61CE9DCDA0049F32B /* Config.swift */; };
 		2AAFEBBE1CE61673006CE23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFEBBD1CE61673006CE23E /* AppDelegate.swift */; };
 		2AAFEBC51CE61673006CE23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFEBC41CE61673006CE23E /* Assets.xcassets */; };
 		2AAFEBC81CE61673006CE23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFEBC61CE61673006CE23E /* LaunchScreen.storyboard */; };
@@ -66,6 +76,11 @@
 
 /* Begin PBXFileReference section */
 		18BCDA97AD5DE252BBD33030 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1944CF1CEA5455004E84A2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		2A1944D21CEA557F004E84A2 /* NewPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostTableViewCell.swift; sourceTree = "<group>"; };
+		2A1944D51CEA57CE004E84A2 /* NewPostTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostTableViewModel.swift; sourceTree = "<group>"; };
+		2AAD9FC31CE9DC9A0049F32B /* API.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API.plist; sourceTree = "<group>"; };
+		2AAD9FC61CE9DCDA0049F32B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2AAFEBBA1CE61673006CE23E /* SeriesAppBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesAppBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAFEBBD1CE61673006CE23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SeriesAppBase/AppDelegate.swift; sourceTree = "<group>"; };
 		2AAFEBC41CE61673006CE23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +158,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2A1944CE1CEA536E004E84A2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2A1944CF1CEA5455004E84A2 /* Note.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		2AAD9FC11CE9DC650049F32B /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				2AAFEC161CE62017006CE23E /* dev-SeriesAppBase.plist */,
+				2AAFEBC91CE61673006CE23E /* Info.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
+		2AAD9FC21CE9DC710049F32B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2AAD9FC31CE9DC9A0049F32B /* API.plist */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		2AAFEBB11CE61673006CE23E = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +239,7 @@
 				2AAFEBBD1CE61673006CE23E /* AppDelegate.swift */,
 				2AAFEBF31CE617A3006CE23E /* Controller */,
 				2AAFEBF11CE6179B006CE23E /* View */,
-				2AAFEBF01CE6178B006CE23E /* Model */,
+				2AAFEBF01CE6178B006CE23E /* ViewModel */,
 				2AAFEBEF1CE61789006CE23E /* Layout */,
 				2AAFEBED1CE61784006CE23E /* Config */,
 				2AAFEBEE1CE61787006CE23E /* Utility */,
@@ -219,8 +259,9 @@
 		2AAFEBED1CE61784006CE23E /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				2AAFEBC91CE61673006CE23E /* Info.plist */,
-				2AAFEC161CE62017006CE23E /* dev-SeriesAppBase.plist */,
+				2AAD9FC21CE9DC710049F32B /* API */,
+				2AAD9FC11CE9DC650049F32B /* plist */,
+				2AAD9FC61CE9DCDA0049F32B /* Config.swift */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -247,11 +288,13 @@
 			name = Layout;
 			sourceTree = "<group>";
 		};
-		2AAFEBF01CE6178B006CE23E /* Model */ = {
+		2AAFEBF01CE6178B006CE23E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2A1944D51CEA57CE004E84A2 /* NewPostTableViewModel.swift */,
+				2A1944CE1CEA536E004E84A2 /* Entity */,
 			);
-			name = Model;
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		2AAFEBF11CE6179B006CE23E /* View */ = {
@@ -407,6 +450,7 @@
 		2AAFEC401CE62748006CE23E /* NewPost */ = {
 			isa = PBXGroup;
 			children = (
+				2A1944D21CEA557F004E84A2 /* NewPostTableViewCell.swift */,
 			);
 			name = NewPost;
 			sourceTree = "<group>";
@@ -563,6 +607,7 @@
 				2AAFEC311CE623B0006CE23E /* Ranking.storyboard in Resources */,
 				2AAFEBC51CE61673006CE23E /* Assets.xcassets in Resources */,
 				2AAFEC341CE623B9006CE23E /* Search.storyboard in Resources */,
+				2AAD9FC41CE9DC9A0049F32B /* API.plist in Resources */,
 				2AAFEC281CE6238E006CE23E /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +637,7 @@
 				2AAFEC321CE623B0006CE23E /* Ranking.storyboard in Resources */,
 				2AAFEC0E1CE62017006CE23E /* Assets.xcassets in Resources */,
 				2AAFEC351CE623B9006CE23E /* Search.storyboard in Resources */,
+				2AAD9FC51CE9DC9A0049F32B /* API.plist in Resources */,
 				2AAFEC291CE6238E006CE23E /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,9 +744,13 @@
 			files = (
 				2AAFEBBE1CE61673006CE23E /* AppDelegate.swift in Sources */,
 				2AAFEC431CE627EA006CE23E /* APIService.swift in Sources */,
+				2AAD9FC71CE9DCDA0049F32B /* Config.swift in Sources */,
 				2AAFEC521CE62885006CE23E /* SearchViewController.swift in Sources */,
 				2AAFEC3B1CE6258B006CE23E /* TabBarController.swift in Sources */,
+				2A1944D01CEA5455004E84A2 /* Note.swift in Sources */,
+				2A1944D61CEA57CE004E84A2 /* NewPostTableViewModel.swift in Sources */,
 				2AAFEC4F1CE62872006CE23E /* RankingViewController.swift in Sources */,
+				2A1944D31CEA557F004E84A2 /* NewPostTableViewCell.swift in Sources */,
 				2AAFEC461CE6283D006CE23E /* MyPageViewController.swift in Sources */,
 				2AAFEC491CE62851006CE23E /* NewPostViewController.swift in Sources */,
 				2AAFEC4C1CE6285F006CE23E /* RecommendViewController.swift in Sources */,
@@ -729,9 +779,13 @@
 			files = (
 				2AAFEC081CE62017006CE23E /* AppDelegate.swift in Sources */,
 				2AAFEC441CE627EA006CE23E /* APIService.swift in Sources */,
+				2AAD9FC81CE9DCDA0049F32B /* Config.swift in Sources */,
 				2AAFEC531CE62885006CE23E /* SearchViewController.swift in Sources */,
 				2AAFEC3C1CE6258B006CE23E /* TabBarController.swift in Sources */,
+				2A1944D11CEA5455004E84A2 /* Note.swift in Sources */,
+				2A1944D71CEA57CE004E84A2 /* NewPostTableViewModel.swift in Sources */,
 				2AAFEC501CE62872006CE23E /* RankingViewController.swift in Sources */,
+				2A1944D41CEA557F004E84A2 /* NewPostTableViewCell.swift in Sources */,
 				2AAFEC471CE6283D006CE23E /* MyPageViewController.swift in Sources */,
 				2AAFEC4A1CE62851006CE23E /* NewPostViewController.swift in Sources */,
 				2AAFEC4D1CE6285F006CE23E /* RecommendViewController.swift in Sources */,
