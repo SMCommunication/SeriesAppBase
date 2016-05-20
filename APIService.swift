@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import SHUtil
 import SwiftyJSON
+import Bond
 
 enum RequestState :UInt {
     case None = 0
@@ -22,6 +23,7 @@ enum Router: URLRequestConvertible {
     static let version      = Config.plist("apiVersion")
     static let apiBaseURL   = "\(Router.host)/api/\(Router.version)"
     
+    case test()
     case CreateUser([String: AnyObject])
     case GetAllNotices()
     case GetNoticeWithCampusId(campusId: String)
@@ -35,6 +37,7 @@ enum Router: URLRequestConvertible {
     case GetCalendar(campusId: String)
     var method: Alamofire.Method {
         switch self {
+        case .test:                     return .GET
         case .CreateUser:               return .POST
         case .GetAllNotices:            return .GET
         case .GetNoticeWithCampusId:    return .GET
@@ -50,6 +53,7 @@ enum Router: URLRequestConvertible {
     }
     var path: String {
         switch self {
+        case test: return ""
         case CreateUser:                                return "/users"
         case GetAllNotices():                           return "/notices"
         case GetNoticeWithCampusId(_):                  return "/notices"
@@ -65,8 +69,10 @@ enum Router: URLRequestConvertible {
     }
     // MARK: URLRequestConvertible
     var URLRequest: NSMutableURLRequest {
-        let URL               = NSURL(string: Router.apiBaseURL)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+//        let URL               = NSURL(string: Router.apiBaseURL)!
+        let URL               = NSURL(string: "https://qiita.com")!
+//        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent("/api/v2/items"))
         mutableURLRequest.HTTPMethod = method.rawValue
         
         //        if let token = Router.OAuthToken {
@@ -91,6 +97,39 @@ enum Router: URLRequestConvertible {
 
 
 struct APIService {
+    static func test(completionHandler: (ObservableArray<Note.ObservableNote>) -> (), errorHandler: (ErrorType?,Int) -> ()) -> () {
+        Alamofire.request(Router.test()).responseSwiftyJSON({(request,response,jsonData,error) in
+            guard let res = response else {
+                SHprint("error! no response")
+                return
+            }
+            if res.statusCode < 200 && res.statusCode >= 300 {
+                SHprint("error!! status => \(res.statusCode)")
+                return
+            }
+            
+            let arr = ObservableArray<Note.ObservableNote>()
+            
+            for (_, subJson) in jsonData {
+                
+                let feed = Note.ObservableNote(title: subJson["title"].string,
+                    
+                    username: subJson["user"]["id"].string,
+                    
+                    userImageURL: subJson["user"]["profile_image_url"].string,
+                    
+                    url: subJson["url"].string
+                    
+                )
+                
+                arr.append(feed)
+                
+            }
+            
+            completionHandler(arr)
+        })
+    }
+
 //    static func reqestNotices(campus: Int,completionHandler: ([Notice]) -> (), errorHandler: (ErrorType?,Int) -> ()) -> () {
 //        Alamofire.request(Router.GetNoticeWithCampusId(campusId: String(campus))).responseSwiftyJSON({(request,response,jsonData,error) in
 //            guard let res = response else {

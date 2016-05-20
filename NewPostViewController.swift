@@ -13,7 +13,7 @@ class NewPostViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let noteViewModel = NewPostTableViewModel()
-    var dataSource = ObservableArray<ObservableArray<Note>>()
+    var dataSource = ObservableArray<ObservableArray<Note.ObservableNote>>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class NewPostViewController: UIViewController {
         
         dataSource.bindTo(tableView) { indexPath, dataSource, tableView in
             guard let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? NewPostTableViewCell else { return UITableViewCell() }
-            let note:Note = dataSource[indexPath.section][indexPath.row]
+            let note:Note.ObservableNote = dataSource[indexPath.section][indexPath.row]
             note.title
                 .bindTo(cell.title.bnd_text)
                 .disposeIn(cell.bnd_bag)
@@ -35,19 +35,18 @@ class NewPostViewController: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.noteViewModel.request()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 }
 
 extension NewPostViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("afdafa")
     }
 }
